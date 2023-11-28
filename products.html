@@ -11,16 +11,19 @@
     <title>Forside</title>
 </head>
 <body>
+    <a href="#grid-container" id="my-btn" title="Go to top"><i class="fa-solid fa-arrow-up"></i></a>
     <div id="grid-container">
         <header>
-            <nav class="center">
-                <a href="index.html" id="logo">
-                    <img src="img/logo1.png" alt="logo">
+            <nav>
+                <a href="index.html">
+                    <img src="img/logo1.png" alt="logo" class="logo">
                 </a>
-                <a href="index.html">Home</a>
-                <a href="products.html">Portfolio</a>
-                <a href="about.html">About</a>
-                <a href="#" class="orange-box">Contact</a>
+                <div class="nav-btns">
+                    <a href="index.html">Home</a>
+                    <a href="products.html" class="active">Portfolio</a>
+                    <a href="about.html">About</a>
+                    <a href="about.html#contact-us" class="orange-box">Contact</a>
+                </div>
             </nav>
         </header>
         <main>
@@ -30,13 +33,13 @@
             <h2 class="portfolio-big">Explore previous jobs</h2>
             <hr>
             <section class="portfolio-btns">
-                <a href="#">Branding</a>
-                <a href="#">Design</a>
-                <a href="#">Development</a>
+                <a href="#branding">Branding</a>
+                <a href="#design">Design</a>
+                <a href="#development">Development</a>
             </section>
-            <h2 class="portfolio-big">Branding</h2>
+            <h2 class="portfolio-big" id="branding">Branding</h2>
             <hr>
-            <section class="branding">
+            <section class="portfolio-sections">
                 <article>
                     <img src="https://placehold.co/400" alt="placeholder image">
                     <h3>Et harum quidem</h3>
@@ -45,6 +48,34 @@
                     <img src="https://placehold.co/400" alt="placeholder image">
                     <h3>Et harum quidem</h3>
                 </article>
+                <article>
+                    <img src="https://placehold.co/400" alt="placeholder image">
+                    <h3>Et harum quidem</h3>
+                </article>
+                <article>
+                    <img src="https://placehold.co/400" alt="placeholder image">
+                    <h3>Et harum quidem</h3>
+                </article>
+            </section>
+            <h2 class="portfolio-big" id="design">Design</h2>
+            <hr>
+            <section class="portfolio-sections">
+                <article>
+                    <img src="https://placehold.co/400" alt="placeholder image">
+                    <h3>Et harum quidem</h3>
+                </article>
+                <article>
+                    <img src="https://placehold.co/400" alt="placeholder image">
+                    <h3>Et harum quidem</h3>
+                </article>
+                <article>
+                    <img src="https://placehold.co/400" alt="placeholder image">
+                    <h3>Et harum quidem</h3>
+                </article>
+            </section>
+            <h2 class="portfolio-big" id="development">Development</h2>
+            <hr>
+            <section class="portfolio-sections">
                 <article>
                     <img src="https://placehold.co/400" alt="placeholder image">
                     <h3>Et harum quidem</h3>
@@ -57,11 +88,17 @@
         </main>
         <footer>
             <section>
-                <img src="img/logo1.png" alt="logo">
+                <article>
+                    <a href="index.html">
+                        <img src="img/logo1.png" alt="logo" class="logo">
+                    </a>
+                </article>
                 <p>Companyrights Companyname 2023</p>
-                <i class="fa-brands fa-square-facebook"></i>
-                <i class="fa-brands fa-square-instagram"></i>
-                <i class="fa-brands fa-linkedin"></i>
+                <article>
+                    <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
+                    <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+                    <a href="https://www.linkedin.com" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                </article>
             </section>
         </footer>
     </div>
