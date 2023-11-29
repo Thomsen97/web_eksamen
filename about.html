@@ -3,117 +3,133 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Sebastian Thomsen">
+    <!--Open graph-->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Eksamen Webutvikling om oss"/>
+    <meta property="og:description" content="Beskrivende tekst om nettsiden, usikker på hva den skal inneholde så jeg skriver bare dette."/>
+    <meta property="og:image" content="img/logo1.png"/>
+    <meta property="og:url" content="https://itstud.hiof.no/~sebastwt/web_eksamen/about.html">
+    <!--Instagram meta-->
+    <meta property="instapp:photo" content="img/logo1.png">
+    <meta property="instapp:hashtags" content="branding, services">
+    <!--Twitter meta-->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Eksamen Webutvikling om oss">
+    <meta name="twitter:image" content="img/logo1.png">
+    <meta name="twitter:description" content="Beskrivende tekst om nettsiden, usikker på hva den skal inneholde så jeg skriver bare dette.">
+    <meta name="twitter:image:alt" content="Logo til bedriften">
+    <meta name="twitter:url" content="https://itstud.hiof.no/~sebastwt/web_eksamen/about.html">
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" type="text/css">
     <link href="css/font/css/fontawesome.css" rel="stylesheet">
     <link href="css/font/css/brands.css" rel="stylesheet">
     <link href="css/font/css/solid.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css" type="text/css">
-    <title>Forside</title>
+    <title>Om oss</title>
 </head>
 <body>
-    <a href="#grid-container" id="my-btn" title="Go to top"><i class="fa-solid fa-arrow-up"></i></a>
-    <div id="grid-container">
+    <a href="#grid-container" id="my-btn" title="Go to top" tabindex="45"><i class="fa-solid fa-arrow-up" aria-label="Go to top"></i></a>
+    <div id="grid-container" tabindex="0">
         <header>
             <nav>
-                <a href="index.html">
+                <a href="index.html" title="Go to the homepage" tabindex="1">
                     <img src="img/logo1.png" alt="logo" class="logo">
                 </a>
-                <div class="nav-btns">    
-                    <a href="index.html">Home</a>
-                    <a href="products.html">Portfolio</a>
-                    <a href="about.html" class="active">About</a>
-                    <a href="#contact-us" class="orange-box">Contact</a>
-                </div>
+                <section class="nav-btns">    
+                    <a href="index.html" title="Go to the homepage" tabindex="2">Home</a>
+                    <a href="products.html" title="Go to the portfolio page" tabindex="3">Portfolio</a>
+                    <a href="about.html" class="active" title="Go to the about us page" tabindex="4">About</a>
+                    <a href="#contact-us" class="orange-box" title="Go to the contact form" tabindex="5">Contact</a>
+                </section>
             </nav>
         </header>
         <main>
-            <div class="about-headline">
+            <section class="about-headline" tabindex="6">
                 <section>
-                    <p>Company name</p>
-                    <h1>About Our Company</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-                    <a href="#contact-us" class="orange-box">Get in touch with us</a>
+                    <p tabindex="7">Company name</p>
+                    <h1 tabindex="8">About Our Company</h1>
+                    <p tabindex="9">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                    <a href="#contact-us" class="orange-box" title="Go to the contact form" tabindex="10">Get in touch with us</a>
                 </section>
-            </div>
-            <section class="center" id="services">
-                <h3>Our services</h3>
+            </section>
+            <section class="center" id="services" tabindex="11">
+                <h3 tabindex="12">Our services</h3>
                 <article>
-                    <i class="fa-solid fa-users"></i>
-                    <h4>Branding</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                    <i class="fa-solid fa-users" aria-label="Branding"></i>
+                    <h4 tabindex="13">Branding</h4>
+                    <p tabindex="14">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
                 </article>
                 <article>
-                    <i class="fa-solid fa-cloud-arrow-up"></i>
-                    <h4>Branding</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                    <i class="fa-solid fa-cloud-arrow-up" aria-label="Branding"></i>
+                    <h4 tabindex="15">Branding</h4>
+                    <p tabindex="16">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
                 </article>
                 <article>
-                    <i class="fa-solid fa-code"></i>
-                    <h4>Branding</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                    <i class="fa-solid fa-code" aria-label="Branding"></i>
+                    <h4 tabindex="17">Branding</h4>
+                    <p tabindex="18">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
                 </article>
                 <article>
-                    <i class="fa-solid fa-wifi"></i>
-                    <h4>Branding</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                    <i class="fa-solid fa-wifi" aria-label="Branding"></i>
+                    <h4 tabindex="19">Branding</h4>
+                    <p tabindex="20">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
                 </article>
             </section>
-            <section class="clients">
-                <h3 class="center">Some of our clients</h3>
-                <img src="img/logo1.png" alt="Klient logo">
-                <img src="img/logo2.png" alt="Klient logo">
-                <img src="img/logo3.png" alt="Klient logo">
+            <section class="clients" tabindex="21">
+                <h3 class="center" tabindex="22">Some of our clients</h3>
+                <img src="img/logo1.png" alt="Klient logo" tabindex="23">
+                <img src="img/logo2.png" alt="Klient logo" tabindex="24">
+                <img src="img/logo3.png" alt="Klient logo" tabindex="25">
             </section>
-            <section class="container" id="contact-us">
-                <h3 class="center">Contact us</h3>
+            <section class="container" id="contact-us" tabindex="26">
+                <h3 class="center" tabindex="27">Contact us</h3>
                 <article class="container-flex">
-                    <div class="contact-flex">
-                        <h4>Send us a message</h4>
+                    <section class="contact-flex">
+                        <h4 tabindex="28">Send us a message</h4>
                         <form class="contact-form">
                             <label for="name">Name</label>
-                            <input type="text" id="name" name="name" placeholder="Ola Nordmann.." required>
+                            <input type="text" id="name" name="name" placeholder="Ola Nordmann.." required tabindex="29">
                             <label for="subject">Subject</label>
-                            <input type="text" id="subject" name="subject" placeholder="Branding.." required>
+                            <input type="text" id="subject" name="subject" placeholder="Branding.." required tabindex="30">
                             <label for="subject">Message</label>
-                            <textarea id="subject-text" name="subject-text" placeholder="Write something.." style="height:200px" required></textarea>
-                            <input type="submit" value="Send message" class="orange-box submit-btn">
+                            <textarea id="subject-text" name="subject-text" placeholder="Write something.." style="height:200px" required tabindex="31"></textarea>
+                            <input type="submit" value="Send message" class="orange-box submit-btn" tabindex="32">
                         </form>
-                    </div>
-                    <div class="contact-flex">
-                        <h4>Contact information</h4>
-                        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint</p>
+                    </section>
+                    <section class="contact-flex">
+                        <h4 tabindex="33">Contact information</h4>
+                        <p tabindex="34">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint</p>
                         <section class="contact-icons">
                             <div class="icon-with-text">
-                                <i class="fa-solid fa-location-pin"></i>
-                                <span>B R A Veien 4, 1757 Halden</span>
+                                <i class="fa-solid fa-location-pin" aria-label="Address"></i>
+                                <span tabindex="35">B R A Veien 4, 1757 Halden</span>
                             </div>
                             <div class="icon-with-text">
-                                <i class="fa-solid fa-phone"></i>
-                                <span>69 60 80 00</span>
+                                <i class="fa-solid fa-phone" aria-label="Phone number"></i>
+                                <span tabindex="36">69 60 80 00</span>
                             </div>
                             <div class="icon-with-text">
-                                <i class="fa-solid fa-envelope"></i>
-                                <a href="#">postmottak@hiof.no</a>
+                                <i class="fa-solid fa-envelope" aria-label="Email address"></i>
+                                <a href="#" tabindex="37">postmottak@hiof.no</a>
                             </div>
                         </section>
-                    </div>    
+                    </section>    
                 </article>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2047.2104093292212!2d11.349786676686684!3d59.12887992705012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464412f6cf4d491d%3A0xdd127f6ec81a545d!2sB%20R%20A%20Veien%204%2C%201783%20Halden!5e0!3m2!1sno!2sno!4v1701090893152!5m2!1sno!2sno" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2047.2104093292212!2d11.349786676686684!3d59.12887992705012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464412f6cf4d491d%3A0xdd127f6ec81a545d!2sB%20R%20A%20Veien%204%2C%201783%20Halden!5e0!3m2!1sno!2sno!4v1701090893152!5m2!1sno!2sno" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" tabindex="38"></iframe>
                 </section>
-            </section>
         </main>
         <footer>
-            <section>
+            <section tabindex="39">
                 <article>
-                    <a href="index.html">
+                    <a href="index.html" title="Go to the homepage" tabindex="40">
                         <img src="img/logo1.png" alt="logo" class="logo">
                     </a>
                 </article>
-                <p>Companyrights Companyname 2023</p>
+                <p tabindex="41">Companyrights Companyname 2023</p>
                 <article>
-                    <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
-                    <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
-                    <a href="https://www.linkedin.com" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.facebook.com" target="_blank" title="Go to facebook website" tabindex="42"><i class="fa-brands fa-square-facebook" aria-label="Go to Facebook"></i></a>
+                    <a href="https://www.instagram.com" target="_blank" title="Go to instagram website" tabindex="43"><i class="fa-brands fa-square-instagram" aria-label="Go to Instagram"></i></a>
+                    <a href="https://www.linkedin.com" target="_blank" title="Go to linkedin website" tabindex="44"><i class="fa-brands fa-linkedin" aria-label="Go to Linkedin"></i></a>
                 </article>
             </section>
         </footer>

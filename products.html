@@ -3,101 +3,118 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Sebastian Thomsen">
+    <!--Open graph-->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Eksamen Webutvikling portfolio"/>
+    <meta property="og:description" content="Beskrivende tekst om nettsiden, usikker på hva den skal inneholde så jeg skriver bare dette."/>
+    <meta property="og:image" content="img/logo1.png"/>
+    <meta property="og:url" content="https://itstud.hiof.no/~sebastwt/web_eksamen/products.html">
+    <!--Instagram meta-->
+    <meta property="instapp:photo" content="img/logo1.png">
+    <meta property="instapp:hashtags" content="branding, services">
+    <!--Twitter meta-->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Eksamen Webutvikling portfolio">
+    <meta name="twitter:image" content="img/logo1.png">
+    <meta name="twitter:description" content="Beskrivende tekst om nettsiden, usikker på hva den skal inneholde så jeg skriver bare dette.">
+    <meta name="twitter:image:alt" content="Logo til bedriften">
+    <meta name="twitter:url" content="https://itstud.hiof.no/~sebastwt/web_eksamen/products.html">
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" type="text/css">
     <link href="css/font/css/fontawesome.css" rel="stylesheet">
     <link href="css/font/css/brands.css" rel="stylesheet">
     <link href="css/font/css/solid.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css" type="text/css">
-    <title>Forside</title>
+    <title>Portfolio</title>
 </head>
 <body>
-    <a href="#grid-container" id="my-btn" title="Go to top"><i class="fa-solid fa-arrow-up"></i></a>
-    <div id="grid-container">
+    <a href="#grid-container" id="my-btn" title="Go to top"><i class="fa-solid fa-arrow-up" aria-label="Go to top" tabindex="41"></i></a>
+    <div id="grid-container" tabindex="0">
         <header>
             <nav>
-                <a href="index.html">
+                <a href="index.html" title="Go to the homepage" tabindex="1">
                     <img src="img/logo1.png" alt="logo" class="logo">
                 </a>
-                <div class="nav-btns">
-                    <a href="index.html">Home</a>
-                    <a href="products.html" class="active">Portfolio</a>
-                    <a href="about.html">About</a>
-                    <a href="about.html#contact-us" class="orange-box">Contact</a>
-                </div>
+                <section class="nav-btns">
+                    <a href="index.html" title="Go to the homepage" tabindex="2">Home</a>
+                    <a href="products.html" class="active" title="Go to the portfolio page" tabindex="3">Portfolio</a>
+                    <a href="about.html" title="Go to the about us page" tabindex="4">About</a>
+                    <a href="about.html#contact-us" class="orange-box" title="Go to the contact form on the about us page" tabindex="5">Contact</a>
+                </section>
             </nav>
         </header>
         <main>
-            <section class="headline portfolio">
+            <section class="headline portfolio" tabindex="6">
                 <h1>Portfolio</h1>
             </section>
-            <h2 class="portfolio-big">Explore previous jobs</h2>
+            <h2 class="portfolio-big" tabindex="7">Explore previous jobs</h2>
             <hr>
             <section class="portfolio-btns">
-                <a href="#branding">Branding</a>
-                <a href="#design">Design</a>
-                <a href="#development">Development</a>
+                <a href="#branding" title="Go to the branding section" tabindex="8">Branding</a>
+                <a href="#design" title="Go to the design section" tabindex="9">Design</a>
+                <a href="#development" title="Go to the development section" tabindex="10">Development</a>
             </section>
-            <h2 class="portfolio-big" id="branding">Branding</h2>
+            <h2 class="portfolio-big" id="branding" tabindex="11">Branding</h2>
             <hr>
-            <section class="portfolio-sections">
+            <section class="portfolio-sections" tabindex="12">
                 <article>
-                    <img src="https://placehold.co/400" alt="placeholder image">
-                    <h3>Et harum quidem</h3>
+                    <img src="https://placehold.co/400" alt="placeholder image" tabindex="13">
+                    <h3 tabindex="14">Et harum quidem</h3>
                 </article>
                 <article>
-                    <img src="https://placehold.co/400" alt="placeholder image">
-                    <h3>Et harum quidem</h3>
+                    <img src="https://placehold.co/400" alt="placeholder image" tabindex="15">
+                    <h3 tabindex="16">Et harum quidem</h3>
+                </article>
+                <article tabindex="">
+                    <img src="https://placehold.co/400" alt="placeholder image" tabindex="17">
+                    <h3 tabindex="18">Et harum quidem</h3>
                 </article>
                 <article>
-                    <img src="https://placehold.co/400" alt="placeholder image">
-                    <h3>Et harum quidem</h3>
-                </article>
-                <article>
-                    <img src="https://placehold.co/400" alt="placeholder image">
-                    <h3>Et harum quidem</h3>
-                </article>
-            </section>
-            <h2 class="portfolio-big" id="design">Design</h2>
-            <hr>
-            <section class="portfolio-sections">
-                <article>
-                    <img src="https://placehold.co/400" alt="placeholder image">
-                    <h3>Et harum quidem</h3>
-                </article>
-                <article>
-                    <img src="https://placehold.co/400" alt="placeholder image">
-                    <h3>Et harum quidem</h3>
-                </article>
-                <article>
-                    <img src="https://placehold.co/400" alt="placeholder image">
-                    <h3>Et harum quidem</h3>
+                    <img src="https://placehold.co/400" alt="placeholder image" tabindex="19">
+                    <h3 tabindex="20">Et harum quidem</h3>
                 </article>
             </section>
-            <h2 class="portfolio-big" id="development">Development</h2>
+            <h2 class="portfolio-big" id="design" tabindex="21">Design</h2>
             <hr>
-            <section class="portfolio-sections">
+            <section class="portfolio-sections" tabindex="22">
                 <article>
-                    <img src="https://placehold.co/400" alt="placeholder image">
-                    <h3>Et harum quidem</h3>
+                    <img src="https://placehold.co/400" alt="placeholder image" tabindex="23">
+                    <h3 tabindex="24">Et harum quidem</h3>
                 </article>
                 <article>
-                    <img src="https://placehold.co/400" alt="placeholder image">
-                    <h3>Et harum quidem</h3>
+                    <img src="https://placehold.co/400" alt="placeholder image" tabindex="25">
+                    <h3 tabindex="26">Et harum quidem</h3>
+                </article>
+                <article>
+                    <img src="https://placehold.co/400" alt="placeholder image" tabindex="27">
+                    <h3 tabindex="28">Et harum quidem</h3>
+                </article>
+            </section>
+            <h2 class="portfolio-big" id="development" tabindex="29">Development</h2>
+            <hr>
+            <section class="portfolio-sections" tabindex="30">
+                <article>
+                    <img src="https://placehold.co/400" alt="placeholder image" tabindex="31">
+                    <h3 tabindex="32">Et harum quidem</h3>
+                </article>
+                <article>
+                    <img src="https://placehold.co/400" alt="placeholder image" tabindex="33">
+                    <h3 tabindex="34">Et harum quidem</h3>
                 </article>
             </section>
         </main>
         <footer>
-            <section>
+            <section tabindex="35">
                 <article>
-                    <a href="index.html">
+                    <a href="index.html" title="Go to the homepage" tabindex="36">
                         <img src="img/logo1.png" alt="logo" class="logo">
                     </a>
                 </article>
-                <p>Companyrights Companyname 2023</p>
+                <p tabindex="37">Companyrights Companyname 2023</p>
                 <article>
-                    <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
-                    <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
-                    <a href="https://www.linkedin.com" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.facebook.com" target="_blank" title="Go to facebook website" tabindex="38"><i class="fa-brands fa-square-facebook" aria-label="Go to Facebook"></i></a>
+                    <a href="https://www.instagram.com" target="_blank" title="Go to instagram website" tabindex="39"><i class="fa-brands fa-square-instagram" aria-label="Go to Instagram"></i></a>
+                    <a href="https://www.linkedin.com" target="_blank" title="Go to linkedin website" tabindex="40"><i class="fa-brands fa-linkedin" aria-label="Go to Linkedin"></i></a>
                 </article>
             </section>
         </footer>

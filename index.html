@@ -3,6 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Sebastian Thomsen">
+    <!--Open graph-->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Eksamen Webutvikling forside"/>
+    <meta property="og:description" content="Beskrivende tekst om nettsiden, usikker på hva den skal inneholde så jeg skriver bare dette."/>
+    <meta property="og:image" content="img/logo1.png"/>
+    <meta property="og:url" content="https://itstud.hiof.no/~sebastwt/web_eksamen/index.html">
+    <!--Instagram meta-->
+    <meta property="instapp:photo" content="img/logo1.png">
+    <meta property="instapp:hashtags" content="branding, services">
+    <!--Twitter meta-->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Eksamen Webutvikling forside">
+    <meta name="twitter:image" content="img/logo1.png">
+    <meta name="twitter:description" content="Beskrivende tekst om nettsiden, usikker på hva den skal inneholde så jeg skriver bare dette.">
+    <meta name="twitter:image:alt" content="Logo til bedriften">
+    <meta name="twitter:url" content="https://itstud.hiof.no/~sebastwt/web_eksamen/index.html">
+    <link rel="icon" type="image/x-icon" href="img/logo1.png">
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" type="text/css">
     <link href="css/font/css/fontawesome.css" rel="stylesheet">
     <link href="css/font/css/brands.css" rel="stylesheet">
@@ -11,92 +29,90 @@
     <title>Forside</title>
 </head>
 <body>
-    <a href="#grid-container" id="my-btn" title="Go to top"><i class="fa-solid fa-arrow-up"></i></a>
-    <div id="grid-container">
+    <a href="#grid-container" id="my-btn" title="Go to top" tabindex="37"><i class="fa-solid fa-arrow-up" aria-label="Go to top"></i></a>
+    <div id="grid-container" tabindex="0">
         <header>
             <nav>
-                <a href="index.html">
+                <a href="index.html" title="Go to the homepage" tabindex="1">
                     <img src="img/logo1.png" alt="logo" class="logo">
                 </a>
-                <div class="nav-btns">
-                    <a href="index.html" class="active">Home</a>
-                    <a href="products.html">Portfolio</a>
-                    <a href="about.html">About</a>
-                    <a href="about.html#contact-us" class="orange-box">Contact</a>
-                </div>
+                <section class="nav-btns">
+                    <a href="index.html" class="active" title="Go to the homepage" tabindex="2">Home</a>
+                    <a href="products.html" title="Go to the portfolio page" tabindex="3">Portfolio</a>
+                    <a href="about.html" title="Go to the about us page" tabindex="4">About</a>
+                    <a href="about.html#contact-us" class="orange-box" title="Go to the contact form on the about us page" tabindex="5">Contact</a>
+                </section>
             </nav>
         </header>
         <main>
-            <section class="headline">
+            <section class="headline" tabindex="7">
                 <video id="background-video" autoplay loop muted poster="img/mountains.mp4">
                     <source src="img/mountains.mp4" type="video/mp4">
                 </video>
                 <article>
                     <h1>Compeling headline</h1>
                     <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
-                    <a href="#services" class="orange-box read-more-btn">Read more about our services</a>
+                    <a href="#services" class="orange-box read-more-btn" title="Go to the services section" tabindex="8">Read more about our services</a>
                 </article>
             </section>
-            <section class="center" id="subheading">
-                <h2>Engaging subheading. What can you help your visitors with</h2>
-                <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+            <section class="center" id="subheading" tabindex="9">
+                <h2 tabindex="10">Engaging subheading. What can you help your visitors with</h2>
+                <p tabindex="11">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
             </section>
-            <section class="front-about">
+            <section class="front-about" tabindex="12">
                 <img src="https://placehold.co/400" alt="placeholder image">
-                <article>
-                    <h3>About our company</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur</p>
-                    <a href="about.html" class="read-about-btn">Read more about us</a>
+                <article tabindex="13">
+                    <h3 tabindex="14">About our company</h3>
+                    <p tabindex="15">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur</p>
+                    <a href="about.html" class="read-about-btn" title="Go to the about us page" tabindex="16">Read more about us</a>
                 </article>
             </section>
-            <section class="center" id="services">
-                <h3>Our services</h3>
+            <section class="center" id="services" tabindex="17">
+                <h3 tabindex="18">Our services</h3>
                 <article>
-                    <i class="fa-solid fa-users"></i>
-                    <h4>Branding</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                    <i class="fa-solid fa-users" aria-label="Branding"></i>
+                    <h4 tabindex="19">Branding</h4>
+                    <p tabindex="20">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
                 </article>
                 <article>
-                    <i class="fa-solid fa-cloud-arrow-up"></i>
-                    <h4>Branding</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                    <i class="fa-solid fa-cloud-arrow-up" aria-label="Branding"></i>
+                    <h4 tabindex="21">Branding</h4>
+                    <p tabindex="22">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
                 </article>
                 <article>
-                    <i class="fa-solid fa-code"></i>
-                    <h4>Branding</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                    <i class="fa-solid fa-code" aria-label="Branding"></i>
+                    <h4 tabindex="23">Branding</h4>
+                    <p tabindex="24">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
                 </article>
                 <article>
-                    <i class="fa-solid fa-wifi"></i>
-                    <h4>Branding</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                    <i class="fa-solid fa-wifi" aria-label="Branding"></i>
+                    <h4 tabindex="25">Branding</h4>
+                    <p tabindex="26">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
                 </article>
             </section>
-            <form class="newsletter-form">
-                <h3>Sign up for our newsletter</h3>
+            <form class="newsletter-form" tabindex="27">
+                <h3 tabindex="28">Sign up for our newsletter</h3>
                 <div class="newsletter">
-                    <input class="email" type="text" placeholder="Nora@epost.no" name="mail" required>
-                    <input class="orange-box sign-up-btn" type="submit" value="Sign me up!">
+                    <input class="email" type="text" placeholder="Nora@epost.no" name="mail" required tabindex="29">
+                    <input class="orange-box sign-up-btn" type="submit" value="Sign me up!" tabindex="30">
                 </div>
             </form>
-
         </main>
         <footer>
-            <section>
+            <section tabindex="31">
                 <article>
-                    <a href="index.html">
+                    <a href="index.html" title="Go to the homepage" tabindex="32">
                         <img src="img/logo1.png" alt="logo" class="logo">
                     </a>
                 </article>
-                <p>Companyrights Companyname 2023</p>
+                <p tabindex="33">Companyrights Companyname 2023</p>
                 <article>
-                    <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
-                    <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
-                    <a href="https://www.linkedin.com" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.facebook.com" target="_blank" title="Go to facebook website" tabindex="34"><i class="fa-brands fa-square-facebook" aria-label="Go to Facebook"></i></a>
+                    <a href="https://www.instagram.com" target="_blank" title="Go to instagram website" tabindex="35"><i class="fa-brands fa-square-instagram" aria-label="Go to Instagram"></i></a>
+                    <a href="https://www.linkedin.com" target="_blank" title="Go to linkedin website" tabindex="36"><i class="fa-brands fa-linkedin" aria-label="Go to Linkedin"></i></a>
                 </article>
             </section>
         </footer>
     </div>
-    
 </body>
 </html>
