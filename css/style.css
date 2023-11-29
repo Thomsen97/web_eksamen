@@ -6,6 +6,7 @@ body{
     font-size: 1rem;
     max-width: 1600px;
     width: 100%;
+    margin: 0 auto;
 }
 
 /* CSS for mobil */
@@ -653,7 +654,7 @@ footer section a {
         color: #e6bd43;
     }
 
-    .portfolio-btns:hover {
+    .portfolio-btns a:hover {
         background-color: #252525;
         color: #e6bd43;
     }
